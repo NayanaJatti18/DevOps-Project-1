@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: nayanajatti/intern-project-cicd:latest
+    container_name: my-devops-app
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
